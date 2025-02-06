@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo del Promedio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: auto;
+            text-align: justify;
+        }
+        .formula {
+            font-size: 22px;
+            font-weight: bold;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 20px 0;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>¿Cómo se Calcula el Promedio?</h1>
+        
+        <p>El promedio (también conocido como media aritmética) es un valor que representa el centro de un conjunto de números. 
+           Se obtiene sumando todos los valores y dividiéndolos por la cantidad total de elementos en el conjunto.</p>
+
+        <p>Fórmula del promedio:</p>
+        
+        <div class="formula">
+            \( \bar{x} = \frac{\sum x_i}{n} \)
+        </div>
+
+        <p>Donde:</p>
+        <ul>
+            <li>\( \bar{x} \) es el promedio</li>
+            <li>\( x_i \) son los valores individuales</li>
+            <li>\( n \) es el número total de elementos</li>
+        </ul>
+
+        <p>Para calcular el promedio de los números 5, 10 y 15:</p>
+        <div class="formula">
+            \( \bar{x} = \frac{5 + 10 + 15}{3} = 10 \)
+        </div>
+
+        <h2>Ejecuta el Cálculo en R</h2>
+        <p>Puedes aprender más sobre cómo calcular el promedio en R con un tutorial interactivo.</p>
+        
+        <button onclick="location.href='promedio_rmd.html'">Ir al Tutorial en R</button>
+    </div>
+
+</body>
+</html>
