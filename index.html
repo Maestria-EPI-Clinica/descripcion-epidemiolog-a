@@ -44,32 +44,16 @@
     
     <nav>
         <button onclick="location.href='introduccion.html'">Introducción</button>
-        <button onclick="location.href='#estadistica'">Estadística Descriptiva</button>
+        <button onclick="location.href='promedio.html'">Estadística Descriptiva</button>
         <button onclick="location.href='#aprendizaje'">Aprendizaje Automático</button>
     </nav>
     
-    <h1 id="estadistica">Breve Historia de la Epidemiología</h1>
+    <h1 id="historia">Breve Historia de la Epidemiología</h1>
     <p>La epidemiología es la disciplina que estudia la distribución y determinantes de las enfermedades en las poblaciones. 
        Sus orígenes se remontan a la antigua Grecia, pero fue en el siglo XIX cuando John Snow demostró su utilidad al 
        identificar el agua contaminada como la causa del brote de cólera en Londres.</p>
     
     <img src="fig_jhon.webp" alt="John Snow, pionero de la epidemiología" width="300">
-    
-    <h2 id="estadistica">Calculadora de Promedio de números</h2>
-    <p>Ingresa números separados por comas para calcular la media:</p>
-    <input type="text" id="numeros" placeholder="Ejemplo: 5,10,15">
-    <button onclick="calcularMedia()">Calcular</button>
-    <p>Resultado: <span id="resultado"></span></p>
-    
-    <script>
-        function calcularMedia() {
-            let input = document.getElementById("numeros").value;
-            let numeros = input.split(",").map(Number);
-            let suma = numeros.reduce((acc, num) => acc + num, 0);
-            let media = suma / numeros.length;
-            document.getElementById("resultado").innerText = isNaN(media) ? "Entrada no válida" : media.toFixed(2);
-        }
-    </script>
     
     <h2 id="aprendizaje">Enlaces de Interés</h2>
     <ul>
