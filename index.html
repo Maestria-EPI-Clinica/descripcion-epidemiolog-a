@@ -15,6 +15,24 @@
             max-height: 400px;
             object-fit: cover;
         }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        nav button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        nav button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -24,14 +42,20 @@
         <h2>Introducción a R</h2>
     </header>
     
-    <h1>Breve Historia de la Epidemiología</h1>
+    <nav>
+        <button onclick="location.href='#introduccion'">Introducción</button>
+        <button onclick="location.href='#estadistica'">Estadística Descriptiva</button>
+        <button onclick="location.href='#aprendizaje'">Aprendizaje Automático</button>
+    </nav>
+    
+    <h1 id="introduccion">Breve Historia de la Epidemiología</h1>
     <p>La epidemiología es la disciplina que estudia la distribución y determinantes de las enfermedades en las poblaciones. 
        Sus orígenes se remontan a la antigua Grecia, pero fue en el siglo XIX cuando John Snow demostró su utilidad al 
        identificar el agua contaminada como la causa del brote de cólera en Londres.</p>
     
     <img src="fig_jhon.webp" alt="John Snow, pionero de la epidemiología" width="300">
     
-    <h2>Calculadora de Promedio de números</h2>
+    <h2 id="estadistica">Calculadora de Promedio de números</h2>
     <p>Ingresa números separados por comas para calcular la media:</p>
     <input type="text" id="numeros" placeholder="Ejemplo: 5,10,15">
     <button onclick="calcularMedia()">Calcular</button>
@@ -47,10 +71,11 @@
         }
     </script>
     
-    <h2>Enlaces de Interés</h2>
+    <h2 id="aprendizaje">Enlaces de Interés</h2>
     <ul>
         <li><a href="https://www.who.int/es" target="_blank">Organización Mundial de la Salud</a></li>
         <li><a href="https://www.cdc.gov" target="_blank">Centros para el Control y la Prevención de Enfermedades</a></li>
     </ul>
 </body>
 </html>
+
