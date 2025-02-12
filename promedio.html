@@ -24,15 +24,6 @@
             margin: auto;
             text-align: justify;
         }
-        .formula {
-            font-size: 22px;
-            font-weight: bold;
-            background-color: #f4f4f4;
-            padding: 10px;
-            border-radius: 5px;
-            display: inline-block;
-            margin: 20px 0;
-        }
         button {
             margin-top: 20px;
             padding: 10px 20px;
@@ -46,6 +37,12 @@
         button:hover {
             background-color: #0056b3;
         }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -56,27 +53,11 @@
         <p>El promedio (también conocido como media aritmética) es un valor que representa el centro de un conjunto de números. 
            Se obtiene sumando todos los valores y dividiéndolos por la cantidad total de elementos en el conjunto.</p>
 
-        <p>Fórmula del promedio:</p>
+        <h2>Explora una Aplicación Interactiva</h2>
+        <p>Puedes aprender más sobre cómo calcular el promedio con un tutorial interactivo.</p>
         
-        <div class="formula">
-            \( \bar{x} = \frac{\sum x_i}{n} \)
-        </div>
+        <iframe src="https://pajaroepi.shinyapps.io/prueba_learn_r/" scrolling="no"></iframe>
 
-        <p>Donde:</p>
-        <ul>
-            <li>\( \bar{x} \) es el promedio</li>
-            <li>\( x_i \) son los valores individuales</li>
-            <li>\( n \) es el número total de elementos</li>
-        </ul>
-
-        <p>Para calcular el promedio de los números 5, 10 y 15:</p>
-        <div class="formula">
-            \( \bar{x} = \frac{5 + 10 + 15}{3} = 10 \)
-        </div>
-
-        <h2>Ejecuta el Cálculo en R</h2>
-        <p>Puedes aprender más sobre cómo calcular el promedio en R con un tutorial interactivo.</p>
-        
         <button onclick="location.href='promedio_rmd.html'">Ir al Tutorial en R</button>
     </div>
 
