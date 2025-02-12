@@ -15,6 +15,19 @@
             margin: auto;
             text-align: center;
         }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        header img {
+            max-width: 150px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
         h1 {
             color: #007BFF;
         }
@@ -23,19 +36,6 @@
             max-width: 800px;
             margin: auto;
             text-align: justify;
-        }
-        button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            border: none;
-            background-color: #007BFF;
-            color: white;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        button:hover {
-            background-color: #0056b3;
         }
         iframe {
             width: 100%;
@@ -47,6 +47,12 @@
 </head>
 <body>
 
+    <header>
+        <img src="A_digital_painting.png" alt="Imagen generada">
+        <h1>Maestría en Epidemiología Javeriana</h1>
+        <h2>Introducción a R</h2>
+    </header>
+
     <div class="container">
         <h1>¿Cómo se Calcula el Promedio?</h1>
         
@@ -57,8 +63,6 @@
         <p>Puedes aprender más sobre cómo calcular el promedio con un tutorial interactivo.</p>
         
         <iframe src="https://pajaroepi.shinyapps.io/prueba_learn_r/" scrolling="no"></iframe>
-
-        <button onclick="location.href='promedio_rmd.html'">Ir al Tutorial en R</button>
     </div>
 
 </body>
